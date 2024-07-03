@@ -1,0 +1,21 @@
+.spinner-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+ }
+ 
+ .spinner {
+   width: 20px;
+   height: 20px; 
+   animation: spinner-z355kx 1s infinite linear;
+   border-radius: 50%;
+   box-shadow: 50px 0px 0 0 #474bff, 31px 39px 0 0 #474bff, -11px 48px 0 0 #474bff, -44px 21px 0 0 #474bff, -44px -21px 0 0 #474bff, -11px -48px 0 0 #474bff, 31px -39px 0 0 #474bff; /* Adjusted for new size */
+ }
+ 
+ @keyframes spinner-z355kx {
+   to {
+     transform: rotate(360deg);
+   }
+ }
+ 
