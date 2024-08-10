@@ -25,7 +25,7 @@ const Checkout = ({ amount, isLoggedIn }) => {
     }
 
     try {
-      const { data } = await axios.post("http://localhost:5000/api/checkout", { amount });
+      const { data } = await axios.post(`${process.env.REACT_APP_API}/api/checkout`, { amount });
       const options = {
         key: process.env.REACT_APP_RAZORPAY_KEY_ID,
         amount: data.order.amount,
@@ -33,7 +33,7 @@ const Checkout = ({ amount, isLoggedIn }) => {
         name: "Ecomzy",
         description: "Test Transaction",
         order_id: data.order.id,
-        callback_url: "http://localhost:5000/api/paymentVerification",
+        callback_url: `${process.env.REACT_APP_API}/api/paymentVerification`,
         prefill: {
           name: "Customer Name",
           email: "customer@example.com",

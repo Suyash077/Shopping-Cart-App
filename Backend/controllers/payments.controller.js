@@ -45,7 +45,7 @@ exports.checkout = async (req, res) => {
         razorpay_signature
       })
       // Redirect to client-side success page with payment details
-      const successUrl = `http://localhost:3000/payment-success?paymentId=${razorpay_payment_id}`;
+      const successUrl = `https://ecommzy.vercel.app/payment-success?paymentId=${razorpay_payment_id}`;
       res.redirect(successUrl);
     } else {
       res.status(400).json({ success: false, message: "Payment verification failed" });

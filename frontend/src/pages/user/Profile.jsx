@@ -26,7 +26,7 @@ function Profile() {
         e.preventDefault();
         try {
             const response = await axios.put(
-                'http://localhost:5000/api/v1/profile',
+                `${process.env.REACT_APP_API}/api/v1/profile`,
                 { name, email, password, phone, address },
                 {
                     headers: {
