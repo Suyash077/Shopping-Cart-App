@@ -1,0 +1,94 @@
+/* LoginStyles.css */
+.login-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.login-input-box {
+    margin-bottom: 20px;
+    position: relative; /* Position the eye icon relative to the input box */
+}
+
+.login-form-label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form-control {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    padding-right: 40px; /* Space for the eye icon */
+    box-sizing: border-box;
+}
+
+.login-form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-password-container {
+    position: relative;
+}
+
+.login-password-toggle-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.login-eye-icon {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+}
+
+/* Button styles */
+.login-submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.login-submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.login-forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.login-forgot-password:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
