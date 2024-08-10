@@ -15,7 +15,12 @@ dotenv.config();
 connectDB.connect();
 
 // Middleware
-app.use(cors());
+
+const corsOptions = {
+    origin: "https://ecommzy.vercel.app",
+    credentials: true
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
