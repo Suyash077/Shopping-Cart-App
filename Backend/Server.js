@@ -15,7 +15,6 @@ dotenv.config();
 connectDB.connect();
 
 // Middleware
-
 const corsOptions = {
     origin: "https://ecommzy.vercel.app",
     credentials: true,
